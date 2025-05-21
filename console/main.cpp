@@ -21,7 +21,8 @@
 #include <bitcoin/node.hpp>
 #include "executor.hpp"
 
-#include <../obj/nix-gnu-debug-shared/_deps/tracy-src/public/tracy/Tracy.hpp>
+//#include <../obj/nix-gnu-debug-shared/_deps/tracy-src/public/tracy/Tracy.hpp>
+#include <../_deps/tracy-src/public/tracy/Tracy.hpp>
 
 // This is some temporary code to explore emission of win32 stack dump.
 #ifdef HAVE_MSC
