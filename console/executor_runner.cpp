@@ -27,7 +27,8 @@
 #include <map>
 #include <boost/format.hpp>
 #include <bitcoin/node.hpp>
-#include <../obj/nix-gnu-debug-shared/_deps/tracy-src/public/tracy/Tracy.hpp>
+//#include <../obj/nix-gnu-debug-shared/_deps/tracy-src/public/tracy/Tracy.hpp>
+#include <../_deps/tracy-src/public/tracy/Tracy.hpp>
 
 namespace libbitcoin {
 namespace node {
