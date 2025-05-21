@@ -27,6 +27,7 @@
 #include <map>
 #include <boost/format.hpp>
 #include <bitcoin/node.hpp>
+#include <../obj/nix-gnu-debug-shared/_deps/tracy-src/public/tracy/Tracy.hpp>
 
 namespace libbitcoin {
 namespace node {
@@ -154,6 +155,8 @@ bool executor::do_run()
     // Start network.
     logger(BN_NETWORK_STARTING);
     node_->start(std::bind(&executor::handle_started, this, _1));
+
+    ZoneScoped;
 
     // Wait on signal to stop node (<ctrl-c>).
     stopping_.get_future().wait();
