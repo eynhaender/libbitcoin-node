@@ -80,7 +80,7 @@ BC_USE_LIBBITCOIN_MAIN
 /// All console input and output streams for the application originate here.
 int bc::system::main(int argc, char* argv[])
 {
-    ZoneScopedN("main");
+    //ZoneScopedN("main");
 
     using namespace bc;
     using namespace bc::node;
