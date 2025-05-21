@@ -21,6 +21,8 @@
 #include <bitcoin/node.hpp>
 #include "executor.hpp"
 
+#include <../obj/nix-gnu-debug-shared/_deps/tracy-src/public/tracy/Tracy.hpp>
+
 // This is some temporary code to explore emission of win32 stack dump.
 #ifdef HAVE_MSC
 #include "stack_trace.hpp"
@@ -77,6 +79,8 @@ BC_USE_LIBBITCOIN_MAIN
 /// All console input and output streams for the application originate here.
 int bc::system::main(int argc, char* argv[])
 {
+    ZoneScopedN("main");
+
     using namespace bc;
     using namespace bc::node;
     using namespace bc::system;
